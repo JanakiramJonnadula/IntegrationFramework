@@ -1,0 +1,31 @@
+<apex:page controller="IntegrationCalloutFrameworkDemo">
+    <apex:form >
+        <!--<apex:actionFunction name="giveMeCountry" action="{!getCountry}" rerender="out"/>-->
+        <apex:pageBlock mode="edit" title="SOAP Service">
+            <apex:pageMessages />
+            <apex:pageBlockSection >
+                <apex:outputLabel value="IP Address : "></apex:outputLabel>
+                <apex:inputText value="{!ipAddress}"/>
+                <apex:outputText value="India : 223.176.49.159 ; USA : 66.249.67.133"></apex:outputText>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="out">
+                <apex:outputText value="{!countryName}"></apex:outputText>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!getCountry}" value="Get Country and Check Status Log"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock mode="edit" title="REST Service">
+            <apex:pageMessages />
+            <apex:pageBlockSection >
+                <apex:outputLabel value="First Name : "></apex:outputLabel>
+                <apex:inputText value="{!firstName}"/>
+                <apex:outputLabel value="Last Name : "></apex:outputLabel>
+                <apex:inputText value="{!lastName}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!restCllout}" value="Click Me and Check Status Log"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

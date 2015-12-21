@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CertificateName__c</fullName>
+        <externalId>false</externalId>
+        <label>Certificate Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CertificatePassword__c</fullName>
+        <externalId>false</externalId>
+        <label>Certificate Password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Certificate__c</fullName>
+        <externalId>false</externalId>
+        <label>Certificate</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compressed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Compressed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EndPoint__c</fullName>
+        <externalId>false</externalId>
+        <label>EndPoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>HeaderName__c</fullName>
+        <description>Select the Header name from ServiceHeaders settings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Header name from ServiceHeaders settings</inlineHelpText>
+        <label>Header Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LogStatus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Log Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Operation__c</fullName>
+        <description>Set the below operation when Service configured with RESTService Strategy:
+GET, PATCH, POST, DELETE, PUT</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the below operation when Service configured with RESTService Strategy:
+GET, PATCH, POST, DELETE, PUT</inlineHelpText>
+        <label>Operation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OutputClass__c</fullName>
+        <externalId>false</externalId>
+        <label>Output Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProcessingClass__c</fullName>
+        <externalId>false</externalId>
+        <label>ProcessingClass</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Strategy__c</fullName>
+        <description>Allowed Values:
+1. SOAPService
+2. RESTService</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allowed Values:
+1. SOAPService
+2. RESTService</inlineHelpText>
+        <label>Strategy</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Timeout__c</fullName>
+        <description>If not set, default is 30,000. The maximum value can be set : 120,000</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If not set, default is 30,000. The maximum value can be set : 120,000</inlineHelpText>
+        <label>Timeout</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Service Settings</label>
+</CustomObject>
